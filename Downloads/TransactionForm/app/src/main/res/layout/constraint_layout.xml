@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmCode"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="68dp"
+            android:capitalize="characters"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderType"
+            app:layout_constraintVertical_bias="0.054"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/companyName"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="32dp"
+            android:capitalize="words"
+            android:hint="Disney"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ticker"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/transactionAmount"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transType"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/confirmationCodeText"
+            android:layout_width="148dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/Confirmation_Code"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/resetButton"
+            app:layout_constraintEnd_toStartOf="@+id/confirmCode"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pricePerShare"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="32dp"
+            android:capitalize="characters"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transactionAmount"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/ppshareText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:text="@string/Price_Per_Share"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/typeOfOrderText"
+            app:layout_constraintEnd_toStartOf="@+id/pricePerShare"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/transTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/Transaction_Type"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/transactionAmountText"
+            app:layout_constraintEnd_toStartOf="@+id/transType"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            app:layout_constraintVertical_bias="0.994" />
+
+        <Spinner
+            android:id="@+id/orderType"
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="32dp"
+            android:hint="@string/n_a"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pricePerShare" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ticker"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="32dp"
+            android:capitalize="characters"
+            android:hint="DIS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/transactionAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:text="@string/Transaction_Amount"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/ppshareText"
+            app:layout_constraintEnd_toStartOf="@+id/transactionAmount"
+            app:layout_constraintHorizontal_bias="0.214"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/typeOfOrderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:text="@string/Type_Of_Order"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/confirmationCodeText"
+            app:layout_constraintEnd_toStartOf="@+id/orderType"
+            app:layout_constraintHorizontal_bias="0.149"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/Ticker"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/companyNameText"
+            app:layout_constraintEnd_toStartOf="@+id/ticker"
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RadioGroup
+            android:id="@+id/transType"
+            android:layout_width="198dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:checkedButton="@id/Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyName">
+
+
+            <RadioButton
+                android:id="@+id/Buy"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Buy" />
+
+            <RadioButton
+                android:id="@+id/Sell"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Sell" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/companyNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:text="@string/Company_Name"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/transTypeText"
+            app:layout_constraintEnd_toStartOf="@+id/companyName"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTransaction"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/transactionForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="serif"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#090202"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/addTransaction"
+            android:layout_width="144dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/subheader"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transactionForm" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="36dp"
+            android:background="#100909"
+            android:onClick="reset"
+            android:text="@string/resetButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/submitButton"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rippleColor="#090505" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="36dp"
+            android:background="#100909"
+            android:onClick="submitClicked"
+            android:text="@string/submitButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmCode"
+            app:layout_constraintVertical_bias="1.0"
+            app:rippleColor="#090505" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/transactionForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_weight="0"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="#090202"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0"
+        android:text="@string/subheader"
+        android:textSize="16sp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tickerText"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Ticker"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ticker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:capitalize="characters"
+            android:hint="DIS" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/companyNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:text="@string/Company_Name"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/companyName"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:capitalize="words"
+            android:hint="Disney"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/transTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:text="@string/Transaction_Type"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <RadioGroup
+            android:id="@+id/transType"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/Buy"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/Buy"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Buy" />
+
+            <RadioButton
+                android:id="@+id/Sell"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="Sell" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/transactionAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="47dp"
+            android:text="@string/Transaction_Amount"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/transactionAmount"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="0.00"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/ppshareText"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Price_Per_Share"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pricePerShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:hint="0.00" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/typeOfOrderText"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Type_Of_Order"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/orderType"
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:hint="@string/n_a" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="35dp">
+
+        <TextView
+            android:id="@+id/confirmationCodeText"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Confirmation_Code"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="160"
+            android:background="#100909"
+            android:onClick="reset"
+            android:text="@string/resetButton" />
+
+        <Space
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#100909"
+            android:onClick="submitClicked"
+            android:text="@string/submitButton" />
+
+
+    </TableRow>
+
+
+</TableLayout>
+</ScrollView>

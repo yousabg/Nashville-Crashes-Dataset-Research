@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Labels"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="a\na\na\na\na\na\na"
+            android:textColor="#46077C"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/OrderNumC"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="num"
+                android:textColor="#46077C"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/TickerC"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="ticker"
+                android:textColor="#46077C"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/compNameC"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="companyName"
+                android:textColor="#46077C"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/transTypeC"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="type"
+                android:textColor="#46077C"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/transAmountC"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="transAmount"
+                android:textColor="#46077C"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/pricePerShareC"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="pshare"
+                android:textColor="#46077C"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/OrderTypeC"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="order type"
+                android:textColor="#46077C"
+                android:textSize="18dp" />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#6206BF" />
+
+    </LinearLayout>
+
+</LinearLayout>

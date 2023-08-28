@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Transaction Forms</string>
+    <string name="subheader">Add Transaction</string>
+    <string name="Ticker">Ticker</string>
+    <string name="Company_Name">Company Name</string>
+    <string name="Transaction_Type">Transaction Type</string>
+    <string name="Transaction_Amount">Transaction Amount</string>
+    <string name="Price_Per_Share">Price Per Share</string>
+    <string name="Type_Of_Order">Type Of Order</string>
+    <string name="Confirmation_Code">Confirmation Code</string>
+    <string name="n_a">N/A</string>
+    <string name="resetButton">Reset</string>
+    <string name="submitButton">Submit</string>
+    <string-array name="confirmations">
+        <item>3934JENM</item>
+        <item>34JEM</item>
+        <item>932WER</item>
+        <item>03MWE</item>
+        <item>24ZCER</item>
+        <item>WM24LM</item>
+    </string-array>
+</resources>
