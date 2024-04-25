@@ -1,7 +1,18 @@
 <h1 align="center">📈 Nashville Crashes Dataset Research 🚧</h1>
 
-<p align="center">🌱 This project is currently under development as part of the <strong>Data Science Portfolio Class</strong>, a senior-level class at Belmont University. 🏫</p>
+<p align="center">🌟 This project has been completed as part of the <strong>Data Science Portfolio Class</strong> at Belmont University. 🏫</p>
 
-<p align="center">It represents a semester-long research project where Data Science students apply all the skills they've honed over the years. 🎓💡</p>
+<p align="center">This represents a semester-long research project where Data Science students applied all the skills they've honed over the years. 🎓💡</p>
 
-<h3 align="center">🔍 Stay tuned for updates as we dive deep into data and discover new insights! 🌟</h3>
+<p align="center">
+  <strong>Project Overview:</strong><br>
+  Our team conducted an in-depth analysis of the Nashville Crashes Dataset to explore traffic accident causes and trends. The findings and insights have been compiled into a comprehensive final report and a detailed poster presentation.
+</p>
+
+<h3 align="center">🔍 Here's a glimpse of our project poster:</h3>
+
+<p align="center">
+  <img src="Exploring_Causes_Traffic_Poster.001.jpeg" alt="Project Poster">
+</p>
+
+<p align="center">Thank you for following our progress! 🌟</p>
