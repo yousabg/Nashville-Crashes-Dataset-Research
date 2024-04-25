@@ -15,4 +15,10 @@
   <img src="Exploring_Causes_Traffic_Poster.001.jpeg" alt="Project Poster">
 </p>
 
+<h3 align="center">🌐 Interactive Mapping Tool</h3>
+
+<p align="center">
+  Explore the <a href="http://gyousab.pythonanywhere.com/mapping">interactive map</a> which allows users to pick any day since January 1, 2017, and visualize all accidents that occurred in Nashville on that day. The tool also calculates the distance to the nearest hospital, plots the hospital location, and shows the route.
+</p>
+
 <p align="center">Thank you for following our progress! 🌟</p>
