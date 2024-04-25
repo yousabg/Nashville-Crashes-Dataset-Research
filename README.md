@@ -6,10 +6,10 @@
 
 <p align="center">
   <strong>Project Overview:</strong><br>
-  Our team conducted an in-depth analysis of the Nashville Crashes Dataset to explore traffic accident causes and trends. The findings and insights have been compiled into a comprehensive final report and a detailed poster presentation.
+  I conducted an in-depth analysis of the Nashville Crashes Dataset to explore traffic accident causes and trends. The findings and insights have been compiled into a comprehensive final report and a detailed poster presentation.
 </p>
 
-<h3 align="center">🔍 Here's a glimpse of our project poster:</h3>
+<h3 align="center">🔍 Here's a glimpse of my project poster:</h3>
 
 <p align="center">
   <img src="Exploring_Causes_Traffic_Poster.001.jpeg" alt="Project Poster">
