@@ -61,8 +61,6 @@ plt.savefig('drunkVnotdrunk.png', dpi=300)
 files.download('drunkVnotdrunk.png')
 plt.show()
 
-#show pic here
-
 #Now let's do the bootstrapping conf interval
 #I'm going to estimate the mean driving speed of males in accidens with a 95% conf interval
 #then im going to see if the mean driving speed of females in accidents falls within this conf interval
@@ -93,4 +91,3 @@ plt.xticks(fontsize=30)
 plt.yticks(fontsize=30)
 files.download('malevfemale.png')
 
-#insert pic here
