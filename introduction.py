@@ -1,3 +1,4 @@
+#part 1:
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -33,7 +34,7 @@ if __name__ == "__main__":
     hourly_accidents = analyze_hourly_accidents(data)
     plot_hourly_accidents(hourly_accidents)
 
-![Hourly Accidents](pictures/accidents_per_hour.png)
+#part 2:
 
 import pandas as pd
 import numpy as np
@@ -65,7 +66,7 @@ if __name__ == "__main__":
     avg_elevation_nashville = 604 / 3.281  # meters to feet conversion for Nashville
     plot_elevation_distribution(data, avg_elevation_nashville)
 
-![Hourly Accidents](pictures/elevation_distribution.png)
+#part 3:
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -95,5 +96,4 @@ if __name__ == "__main__":
     combined_df = merge_datasets(accident_df, person_df, vehicle_df)
     plot_density(combined_df)
 
-![Hourly Accidents](pictures/ave_vs_travel.png)
 
