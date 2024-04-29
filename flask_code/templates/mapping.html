@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Accident Mapping App{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<style>
+    .map-container {
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="map-container">
+        <section class="my-4">
+            <h2 class="h4 mb-3 text-custom">Map Accidents</h2>
+            <p>Explore accident data by entering a specific day below:</p>
+            <form action="/mapping" method="post">
+                <div class="form-group">
+                    <label for="user_input_day">Select a day:</label>
+                    <input type="date" id="user_input_day" name="user_input_day" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+        <section class="my-4">
+            {% if day %}
+                <h2 class="h4 mb-3 text-custom">Accidents on {{ day }}</h2>
+            {% endif %}
+
+            <div id="accidents_map"> 
+                {% if plot %}
+                    {{ plot | safe }}
+                {% endif %}
+            </div>
+        </section>
+    </div>
+</div>
+
+<footer class="container mt-4 text-center">
+    <p>
+        Thanks for trying out my website! This took a lot of work, and all data comes from official police reports that occur at accidents - Yousab Grees
+    </p>
+    <p>
+        For all questions, please email me at greesyousab@gmail.com
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    flatpickr('#user_input_day', {
+        dateFormat: 'Y-m-d',
+        maxDate: 'today',
+        defaultDate: 'today',
+        enableTime: false,
+    });
+</script>
+{% endblock %}
