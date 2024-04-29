@@ -12,7 +12,7 @@
 <h3 align="center">🔍 Here's a glimpse of my project poster:</h3>
 
 <p align="center">
-  <img src="pictures/Exploring_Causes_Traffic_Poster.001.jpeg" alt="Project Poster">
+  <img src="pictures/Exploring_Causes_Traffic_Poster.001.png" alt="Project Poster">
 </p>
 
 <h3 align="center">🌐 Interactive Mapping Tool</h3>
